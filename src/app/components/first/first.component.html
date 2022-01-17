@@ -1,0 +1,9 @@
+<div [ngStyle]="{'background-color' : colorValue!=='' ? colorValue : defaultColor}" class="center">
+  <h1>Exercice 1</h1>
+  <input #color (change)="changeColor(color.value)" class="form-control"/>
+  <br/>
+  <button (click)="changeColor(defaultColor)" class="btn btn-primary"> Restore Color</button>
+</div>
+
+
+
